@@ -1,0 +1,8 @@
+language: java
+jdk: 1.8.0_241
+jobs:
+  include:
+    - stage: test
+      script: mvn -Dtest=com.example.webfluxdemo.component.** test
+    - stage: build
+      script: mvn clean install -DskipTests=true
