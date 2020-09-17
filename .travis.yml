@@ -1,0 +1,14 @@
+language: java
+jdk:
+  - openjdk8
+jobs:
+  include:
+    - stage: build
+      name: "Build"
+      script: "mvn clean install -DskipTests=true"
+    - stage: "Component Tests"
+      name: "Component Tests"
+      script: "mvn -Dtest=com.example.webfluxdemo.component.** test"
+    - stage: "Contract Tests"
+      name: "Consumer Contract Tests"
+      script: "mvn -Dtest=ContractVerifierTest test"
