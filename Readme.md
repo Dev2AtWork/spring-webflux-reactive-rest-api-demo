@@ -4,6 +4,8 @@ This repo is forked from https://github.com/callicoder/spring-webflux-reactive-r
 This repo demonstrates different types of testing for microservices like Component, System Integration,
 Contract & Performance tests. 
 
+[![Build Status](https://travis-ci.com/Dev2AtWork/spring-webflux-reactive-rest-api-demo.svg?branch=master)](https://travis-ci.com/Dev2AtWork/spring-webflux-reactive-rest-api-demo)
+
 ## Requirements
 
 1. Java - 1.8.x
